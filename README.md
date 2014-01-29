@@ -1,4 +1,3 @@
-get-off-my-case
+Salesforce Enhancement Suite
 ===============
-
-A tutorial on accessing Salesforce from a Chrome extension.
+A small extension for improving some aspects of the Salesforce Setup UI
