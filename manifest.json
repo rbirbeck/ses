@@ -16,6 +16,11 @@
       "js": [ "js/jquery.js",
               "js/morerecords.js"],
       "matches": ["https://*.salesforce.com/*"]
+    },
+    {
+      "js": [ "js/jquery.js",
+              "js/biggerWorkbenchExecuteBox.js"],
+      "matches": ["http://workbench/execute.php", "https://workbench.developerforce.com/execute.php"]
     }
   ]
 }
