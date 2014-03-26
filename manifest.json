@@ -21,6 +21,11 @@
       "js": [ "js/jquery.js",
               "js/biggerWorkbenchExecuteBox.js"],
       "matches": ["http://workbench/execute.php", "https://workbench.developerforce.com/execute.php"]
+    },
+    {
+      "js": [ "js/jquery.js",
+              "js/prettyLog.js"],
+      "matches": ["https://*.salesforce.com/apexdebug/traceDownload*"]
     }
   ]
 }
