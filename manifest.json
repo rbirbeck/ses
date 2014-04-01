@@ -23,6 +23,7 @@
       "matches": ["http://workbench/execute.php", "https://workbench.developerforce.com/execute.php"]
     },
     {
+      "css": ["css/ses.css"],
       "js": [ "js/jquery.js",
               "js/prettyLog.js"],
       "matches": ["https://*.salesforce.com/apexdebug/traceDownload*"]
