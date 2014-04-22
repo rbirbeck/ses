@@ -20,7 +20,7 @@
     {
       "js": [ "js/jquery.js",
               "js/biggerWorkbenchExecuteBox.js"],
-      "matches": ["http://workbench/execute.php", "https://workbench.developerforce.com/execute.php"]
+      "matches": ["http://workbench/execute.php", "https://workbench.developerforce.com/execute.php", "https://workbench.internal.salesforce.com/execute.php"]
     },
     {
       "css": ["css/ses.css"],
