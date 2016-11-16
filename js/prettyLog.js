@@ -2,6 +2,7 @@ function init() {
     var colors = ['FFFAFA', 'FFDDBF', 'FFEFBF', 'FFFABF', 'FFFFBF', 'EAFFBF'];
     var colorsLength = colors.length;
     var cIndex = 0;
+    var prettyLogContainer = jQuery('pre').parent();
     var pre = jQuery('pre').text();
     jQuery('pre').remove();
     var shouldDecrement = false;
@@ -23,6 +24,7 @@ function init() {
     pre = escapeHtml(pre);
     var lines = pre.split('\n');
     var length = lines.length;
+    
     for (var i = 0; i < length; i++) {
         if (lines[i].indexOf('|METHOD_ENTRY') !== -1) {
             lines[i] = '<div style="background-color:#' + colors[cIndex] + ';"><pre>' + lines[i] + '\n';
@@ -37,10 +39,13 @@ function init() {
         } 
     }
 
-    jQuery('body').css({
+    jQuery(prettyLogContainer).css({
         'white-space': 'pre',
         'font-family': 'monospace'
-    }).append('<link rel="stylesheet" type="text/css" href="#" />').append(lines.join(''));
+    }).append('<link rel="stylesheet" type="text/css" href="#" />');
+
+    prettyLogContainer.addClass('prettyLog');
+    prettyLogContainer.append(lines.join(''));
 
     function incrementCIndex(current, len) {
         var result = current+1;
